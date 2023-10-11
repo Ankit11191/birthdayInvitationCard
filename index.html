@@ -132,17 +132,12 @@
         <script>
             function countdown() {
                 const today = new Date();
-                var offerDate = new Date('09 Nov 2023');
+                var offerDate = new Date('09 Nov 2023 19:00:00');
                 //If offer ends reset to new value
                 if (today.getSeconds() == offerDate.getSeconds()) {
                     offerDate = resetOfferDate();
                 }
-                //offerTime will have the total millseconds
                 const offerTime = offerDate - today;
-                // 1 sec= 1000 ms
-                // 1 min = 60 sec
-                // 1 hour = 60 mins
-                // 1 day = 24 hours
                 const offerDays = Math.floor(offerTime / (1000 * 60 * 60 * 24));
                 const offerHours = Math.floor((offerTime / (1000 * 60 * 60) % 24));
                 const offerMins = Math.floor((offerTime / (1000 * 60) % 60));
@@ -164,20 +159,20 @@
             setInterval(countdown, 1000);
         </script>
 
-        <div class="wrap">
-            <h3 class="Birthday">Countdown for Celebration</h3>
+        <div class="timercenter wrap" >
+            <h3 class="birthday">Countdown for Celebration</h3>
             <div class="timer">
                 <div class="days">
-                    <span id="days_left"> 0</span> Ddays
+                    <span id="days_left">0</span> Ddays
                 </div>
                 <div class="hours">
-                    <span id="hours_left"> 0 </span> Hours
+                    <span id="hours_left">0</span> Hours
                 </div>
                 <div class="mins">
-                    <span id="mins_left"> 0 </span> Mins
+                    <span id="mins_left">0</span> Mins
                 </div>
                 <div class="secs">
-                    <span id="secs_left"> 0 </span> Secs
+                    <span id="secs_left">0</span> Secs
                 </div>
             </div>
         </div>

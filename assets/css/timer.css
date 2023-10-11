@@ -1,26 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-body{
-font-family: 'Oswald', sans-serif;
-align-content: center;
-text-align: center;
-background-color:rgb(244, 248, 250);
-}
-.product{
-display: flex;
-background-color: rgb(237, 243, 243);
-text-align: center;
-gap: 7rem;
-}
-.details{
-display:flex;
-flex-direction: column;
-text-align: center;
-margin-right: 150px;
-}
 .wrap{
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
+background-color: rgb(237, 243, 243);
 }
 .timer{
 display: flex;
@@ -53,9 +36,13 @@ font-size: 22px;
 h3{
 color:lightseagreen;
 }
-.offer{
-flex-basis: 6rem;
+.birthday{
+padding: 20px;
 }
-p{
-text-align: left;
+.product{
+display: flex;
+gap: 7rem;
+}
+.timercenter {
+ text-align: center;
 }
