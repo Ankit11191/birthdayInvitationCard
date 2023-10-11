@@ -49,17 +49,18 @@
                     <div class="row align-items-center">
                         <!-- Logo -->
                         <div class="col-xl-2 col-lg-2 col-md-2">
-                            <div class="logo">
+                            <!-- <div class="logo">
                                 <a href="index.html"><img src="assets/img/logo/logo.png" alt="" width="50"
                                         height="50"></a>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="col-xl-10 col-lg-10 col-md-10">
                             <!-- Main-menu -->
-                            <div class="main-menu f-right d-none d-lg-block">
+                            <!-- <div class="main-menu f-right d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a href="index.html">Invitation</a></li>
+                                        <li><a href="index.html">Invitation</a></li> -->
+
                                         <!-- <li><a href="location.html">Venue Details</a></li>
                                         <li><a href="gallery.html">Memories</a></li> -->
                                         <!-- <li><a href="booking.html">Guest Book</a></li>
@@ -71,14 +72,15 @@
                                             </ul>
                                         </li>
                                         <li><a href="contact.html">contact</a></li> -->
-                                    </ul>
+
+                                    <!-- </ul>
                                 </nav>
-                            </div>
+                            </div> -->
                         </div>
                         <!-- Mobile Menu -->
-                        <div class="col-12">
+                        <!-- <div class="col-12">
                             <div class="mobile_menu d-block d-lg-none"></div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -137,6 +139,10 @@
                 }
                 //offerTime will have the total millseconds
                 const offerTime = offerDate - today;
+                // 1 sec= 1000 ms
+                // 1 min = 60 sec
+                // 1 hour = 60 mins
+                // 1 day = 24 hours
                 const offerDays = Math.floor(offerTime / (1000 * 60 * 60 * 24));
                 const offerHours = Math.floor((offerTime / (1000 * 60 * 60) % 24));
                 const offerMins = Math.floor((offerTime / (1000 * 60) % 60));
@@ -193,7 +199,7 @@
                             </div>
                             <div class="bottom-caption" >
                                 <p style="text-align:center"><b><u>7:00 PM</u></b></p>
-                                <p style="text-align:center"><b>Banquet Hall 1, Shriram Summitt<br>Electronics City Phase 1, Bangalore </b></p>
+                                <p ><b>Banquet Hall 1, Shriram Summitt<br>Electronics City Phase 1, Bangalore </b></p>
                             </div>
                         </div>
                     </div>
