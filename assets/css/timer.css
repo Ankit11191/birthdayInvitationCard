@@ -8,11 +8,13 @@ background-color:rgb(244, 248, 250);
 .product{
 display: flex;
 background-color: rgb(237, 243, 243);
+text-align: center;
 gap: 7rem;
 }
 .details{
 display:flex;
 flex-direction: column;
+text-align: center;
 margin-right: 150px;
 }
 .wrap{
@@ -24,28 +26,27 @@ display: flex;
 text-align: center;
 flex-direction: row;
 margin-left: 3rem;
-gap: 30px;
 color:red;
 margin-top: -5px;
 }
 .days{
 background-color: blanchedalmond;
-padding: 11px;
+padding: 20px;
 font-size: 22px;
 }
 .hours{
 background-color: blanchedalmond;
-padding: 11px;
+padding: 20px;
 font-size: 22px;
 }
 .mins{
 background-color: blanchedalmond;
-padding: 11px;
+padding: 20px;
 font-size: 22px;
 }
 .secs{
 background-color: blanchedalmond;
-padding: 11px;
+padding: 20px;
 font-size: 22px;
 }
 h3{
