@@ -9,9 +9,8 @@ background-color: rgb(237, 243, 243);
 display: flex;
 text-align: center;
 flex-direction: row;
-margin-left: 3rem;
+margin-left: center;
 color:red;
-margin-top: -5px;
 }
 .days{
 background-color: blanchedalmond;
@@ -42,4 +41,5 @@ gap: 7rem;
 }
 .timercenter {
  text-align: center;
+
 }
