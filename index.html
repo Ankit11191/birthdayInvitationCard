@@ -25,6 +25,35 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/timer.css">
 </head>
+<script>
+    function countdown() {
+        const today = new Date();
+        var offerDate = new Date('09 Nov 2023 19:00:00');
+        //If offer ends reset to new value
+        if (today.getSeconds() == offerDate.getSeconds()) {
+            offerDate = resetOfferDate();
+        }
+        const offerTime = offerDate - today;
+        const offerDays = Math.floor(offerTime / (1000 * 60 * 60 * 24));
+        const offerHours = Math.floor((offerTime / (1000 * 60 * 60) % 24));
+        const offerMins = Math.floor((offerTime / (1000 * 60) % 60));
+        const offerSecs = Math.floor((offerTime / 1000) % 60);
+        const days_el = document.getElementById("days_left");
+        days_el.innerHTML = offerDays;
+        const hours_el = document.getElementById("hours_left");
+        hours_el.innerHTML = offerHours;
+        const mins_el = document.getElementById("mins_left");
+        mins_el.innerHTML = offerMins;
+        const secs_el = document.getElementById("secs_left");
+        secs_el.innerHTML = offerSecs;
+    }
+    function resetOfferDate() {
+        const futureDate = new Date();
+        futureDate.setDate(futureDate.getDate() + 15);
+        return futureDate;
+    }
+    setInterval(countdown, 1000);
+</script>
 
 <body>
 
@@ -127,56 +156,23 @@
             </div>
         </div>
         <!-- Slider Area End-->
-        <!-- Countdown Timer Starts-->
-
-        <script>
-            function countdown() {
-                const today = new Date();
-                var offerDate = new Date('09 Nov 2023 19:00:00');
-                //If offer ends reset to new value
-                if (today.getSeconds() == offerDate.getSeconds()) {
-                    offerDate = resetOfferDate();
-                }
-                const offerTime = offerDate - today;
-                const offerDays = Math.floor(offerTime / (1000 * 60 * 60 * 24));
-                const offerHours = Math.floor((offerTime / (1000 * 60 * 60) % 24));
-                const offerMins = Math.floor((offerTime / (1000 * 60) % 60));
-                const offerSecs = Math.floor((offerTime / 1000) % 60);
-                const days_el = document.getElementById("days_left");
-                days_el.innerHTML = offerDays;
-                const hours_el = document.getElementById("hours_left");
-                hours_el.innerHTML = offerHours;
-                const mins_el = document.getElementById("mins_left");
-                mins_el.innerHTML = offerMins;
-                const secs_el = document.getElementById("secs_left");
-                secs_el.innerHTML = offerSecs;
-            }
-            function resetOfferDate() {
-                const futureDate = new Date();
-                futureDate.setDate(futureDate.getDate() + 15);
-                return futureDate;
-            }
-            setInterval(countdown, 1000);
-        </script>
-
-        <div class="timercenter wrap" >
-            <h3 class="birthday">Countdown for Celebration</h3>
-            <div class="timer">
-                <div class="days">
-                    <span id="days_left">0</span> Ddays
-                </div>
-                <div class="hours">
-                    <span id="hours_left">0</span> Hours
-                </div>
-                <div class="mins">
-                    <span id="mins_left">0</span> Mins
-                </div>
-                <div class="secs">
-                    <span id="secs_left">0</span> Secs
+ 
+               <!-- Countdown Timer Starts-->    
+            <div class="timercenter wrap container" >
+                <h3 class="birthday" style="text-align: center">Countdown for Celebration</h3>
+                <div class="timer">
+                    <div class="days">
+                        <span id="days_left">0</span> Ddays
+                    </div>
+                    <div class="hours">
+                        <span id="hours_left">0</span> Hours
+                    </div>
+                    <div class="mins">
+                        <span id="mins_left">0</span> Mins
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Countdown Timer Ends-->
+            <!-- Countdown Timer Ends-->
         <!-- Services Area Start-->
         <div class="service-area ">
             <div class="container">
