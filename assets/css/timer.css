@@ -11,23 +11,51 @@ text-align: center;
 flex-direction: row;
 margin-left: center;
 color:red;
+gap: 15px;
 }
 .days{
 background-color: blanchedalmond;
 padding: 20px;
+font-size: 20px;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+border: 3px solid #b60d0d;
+font-weight: bold;
+
 }
 .hours{
 background-color: blanchedalmond;
 padding: 20px;
+font-size: 20px;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+border: 3px solid #b60d0d;
+font-weight: bold;
+
 }
 .mins{
 background-color: blanchedalmond;
 padding: 20px;
+font-size: 20px;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+border: 3px solid #b60d0d;
+font-weight: bold;
+
 }
 .secs{
 background-color: blanchedalmond;
 padding: 20px;
-font-size: 22px;
+font-size: 30px;
+font-size: 20px;
+width: 100px;
+height: 100px;
+border-radius: 50%;
+border: 3px solid #b60d0d;
+font-weight: bold;
 }
 h3{
 color:lightseagreen;
@@ -41,5 +69,4 @@ gap: 7rem;
 }
 .timercenter {
  text-align: center;
-
 }
